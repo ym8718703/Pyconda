@@ -1,7 +1,3 @@
-d = {"id": 101}
-print(d["id"])
-
-#Accessing Dictionary
 s_info = {"name" : "Yash",
           "age" : "18",
           "Course" : ["Math","Physics","Chemistry","FCS"],
