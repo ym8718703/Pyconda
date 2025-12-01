@@ -1,12 +1,12 @@
 def identify(n):
     if n%2 == 0:
-      return(1)
+      return True
     else :
-       return(0)
+       return False
     
 Num = int(input("Enter a Number :"))
-A = identify(Num)
-if A == 1 :
+
+if identify(Num) :
    print("Number is Even")
 else :
    print("Number is ODD")   

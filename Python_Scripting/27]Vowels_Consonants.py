@@ -1,17 +1,13 @@
-def is_vowel(ch):
-    # Convert to lowercase to handle both uppercase and lowercase
-    ch = ch.lower()
-    
-    if ch in ['a', 'e', 'i', 'o', 'u']:
-        return True
-    else:
-        return False
+string = input("Enter a string: ")
+vowels = "aeiouAEIOU"
+vowel_count = 0
+consonant_count = 0
+for char in string:
+    if char.isalpha():  # check if character is a letter
+        if char in vowels:
+            vowel_count += 1
+        else:
+            consonant_count += 1
 
-char = input("Enter a character: ")
-if len(char) == 1:
-    if is_vowel(char):
-        print(char, "is a vowel.")
-    else:
-        print(char, "is not a vowel.")
-else:
-    print("Please enter only a single character.")
+print("Number of vowels:", vowel_count)
+print("Number of consonants:", consonant_count)
