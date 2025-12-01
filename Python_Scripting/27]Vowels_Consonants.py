@@ -3,7 +3,7 @@ vowels = "aeiouAEIOU"
 vowel_count = 0
 consonant_count = 0
 for char in string:
-    if char.isalpha():  # check if character is a letter
+    if char.isalpha():  
         if char in vowels:
             vowel_count += 1
         else:
